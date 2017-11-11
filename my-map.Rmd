@@ -1,0 +1,7 @@
+# November 10, 2017
+```{r, echo=FALSE}
+library(leaflet); library(dplyr)
+osu <- makeIcon(iconUrl = "http://cdn.bleacherreport.net/images/team_logos/328x328/ohio_state.png", iconHeight = 40, iconWidth = 45)
+leaflet() %>% addTiles() %>%
+  addMarkers(lat = 40.0142, lng = -83.0309, popup = "ME", icon = osu)
+```
